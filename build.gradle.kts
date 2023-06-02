@@ -5,6 +5,8 @@ plugins {
     java
 }
 
+base.archivesName.set(property("archives_base_name") as String)
+
 group = property("maven_group")!!
 version = property("mod_version")!!
 
